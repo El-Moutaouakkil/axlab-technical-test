@@ -67,9 +67,9 @@ export type Flight = {
     flightDate: string;
     origin: IATACode;
     destination: IATACode;
-    contingents: Contingent[];
 };
 export type Contingent = {
+    
     flightId: number;
     clientCode: string;
     totalSeats: number;
