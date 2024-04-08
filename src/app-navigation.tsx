@@ -12,10 +12,7 @@ export const navigation = [
         text: 'Flights',
         path: '/flights'
       },
-      {
-        text: 'Tasks',
-        path: '/tasks'
-      }
+  
     ]
   }
   ];

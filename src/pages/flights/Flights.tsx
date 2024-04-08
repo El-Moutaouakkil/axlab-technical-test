@@ -20,6 +20,11 @@ const Flights = () => {
         []
     );
 
+    // Note: in a real world app, we should probably save state into url params to allow direct linking to a specific flight details 
+    // and to allow the user to refresh the page without losing the selected flight
+
+    
+
     return (
         <div className='flights'>
             <div >
