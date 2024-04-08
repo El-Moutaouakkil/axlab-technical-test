@@ -9,7 +9,6 @@ type FlightDetailsProps = {
 };
 
 const FlightDetails = ({ flightId }: FlightDetailsProps) => {
-    
     const [contingents, setContingents] = useState<Contingent[]>([]);
 
     useEffect(() => {
@@ -20,11 +19,13 @@ const FlightDetails = ({ flightId }: FlightDetailsProps) => {
     }, [flightId]);
 
     return (
-        <DataGrid dataSource={contingents}>
-            <Column dataField='clientCode' caption='Client Code' />
-            <Column dataField='totalSeats' caption='Total Seats' />
-            <Column dataField='bookedSeats' caption='Booked Seats' />
-        </DataGrid>
+        <>
+            <DataGrid dataSource={contingents}>
+                <Column dataField='clientCode' caption='Client Code' />
+                <Column dataField='totalSeats' caption='Total Seats' />
+                <Column dataField='bookedSeats' caption='Booked Seats' />
+            </DataGrid>
+        </>
     );
 };
 

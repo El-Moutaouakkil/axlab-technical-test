@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 // import "./flights.scss";
 import { DataGrid } from "devextreme-react";
-import { Column } from "devextreme-react/cjs/data-grid";
+import { Column, Selection } from "devextreme-react/cjs/data-grid";
 import flightsData from "../../../mock-data/flights.json";
 import { Flight } from "../../../types";
+import { EventInfo } from "devextreme/events";
+import dxDataGrid, { SelectionChangedInfo } from "devextreme/ui/data_grid";
 
 type FlightsListProps = {
-    onSelect: (flightId: number) => void;
-};
+
+    onSelect: | (( e: EventInfo<dxDataGrid<Flight, any>> & SelectionChangedInfo<Flight, any> ) => void) | undefined; };
 
 const FlightsList = ({ onSelect }: FlightsListProps) => {
     const [flights, setFlights] = useState<Flight[]>([]);
@@ -17,23 +19,27 @@ const FlightsList = ({ onSelect }: FlightsListProps) => {
         setFlights(flightsData as Flight[]);
     }, []);
 
+    const airlineRender = ({ data }: any) => (
+        <>
+            <span className='from'>from</span>{" "}
+            <span className='airlineCode'>{data.airlineCode}</span>{" "}
+            <span className='through'>through </span>{" "}
+            <span className='flightNumber'>{data.flightNumber}</span>
+        </>
+    );
+
     return (
         <DataGrid
             dataSource={flights}
             keyExpr='id'
-            onSelectionChanged={(e) => {
-                if (e.selectedRowsData[0]) {
-                    onSelect(e.selectedRowsData[0].id);
-                }
-            }}>
+            hoverStateEnabled={true}
+            onSelectionChanged={onSelect}>
+            <Selection mode='single' />
             <Column
                 dataField='airlineCode'
                 caption='Airline'
-                cellRender={({ data }) =>
-                    `From ${data.airlineCode} To ${data.flightNumber}`
-                }
+                cellRender={airlineRender}
             />
-            {/* <Column dataField='flightDate' caption='Date' /> */}
             <Column
                 caption='Flight schedule'
                 cellRender={({ data }) =>

@@ -1,0 +1,277 @@
+[
+    {
+        "flightId": 1,
+        "clientCode": "ABC",
+        "totalSeats": 150,
+        "bookedSeats": 10
+    },
+    {
+        "flightId": 1,
+        "clientCode": "XYZ",
+        "totalSeats": 150,
+        "bookedSeats": 12
+    },
+    {
+        "flightId": 1,
+        "clientCode": "DEF",
+        "totalSeats": 200,
+        "bookedSeats": 18
+    },
+    {
+        "flightId": 1,
+        "clientCode": "GHI",
+        "totalSeats": 200,
+        "bookedSeats": 15
+    },
+    {
+        "flightId": 2,
+        "clientCode": "JKL",
+        "totalSeats": 180,
+        "bookedSeats": 12
+    },
+    {
+        "flightId": 2,
+        "clientCode": "MNO",
+        "totalSeats": 180,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 3,
+        "clientCode": "ABC",
+        "totalSeats": 150,
+        "bookedSeats": 10
+    },
+    {
+        "flightId": 3,
+        "clientCode": "XYZ",
+        "totalSeats": 150,
+        "bookedSeats": 12
+    },
+
+    {
+        "flightId": 4,
+        "clientCode": "DEF",
+        "totalSeats": 200,
+        "bookedSeats": 18
+    },
+    {
+        "flightId": 4,
+        "clientCode": "GHI",
+        "totalSeats": 200,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 5,
+        "clientCode": "JKL",
+        "totalSeats": 180,
+        "bookedSeats": 12
+    },
+    {
+        "flightId": 5,
+        "clientCode": "MNO",
+        "totalSeats": 180,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 6,
+        "clientCode": "ABC",
+        "totalSeats": 150,
+        "bookedSeats": 10
+    },
+    {
+        "flightId": 6,
+        "clientCode": "XYZ",
+        "totalSeats": 150,
+        "bookedSeats": 12
+    },
+
+    {
+        "flightId": 7,
+        "clientCode": "DEF",
+        "totalSeats": 200,
+        "bookedSeats": 18
+    },
+
+    {
+        "flightId": 2,
+        "clientCode": "DEF",
+        "totalSeats": 200,
+        "bookedSeats": 18
+    },
+    {
+        "flightId": 2,
+        "clientCode": "GHI",
+        "totalSeats": 200,
+        "bookedSeats": 15
+    },
+    {
+        "flightId": 3,
+        "clientCode": "JKL",
+        "totalSeats": 180,
+        "bookedSeats": 12
+    },
+    {
+        "flightId": 3,
+        "clientCode": "MNO",
+        "totalSeats": 180,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 4,
+        "clientCode": "ABC",
+        "totalSeats": 150,
+        "bookedSeats": 10
+    },
+    {
+        "flightId": 4,
+        "clientCode": "XYZ",
+        "totalSeats": 150,
+        "bookedSeats": 12
+    },
+
+    {
+        "flightId": 5,
+        "clientCode": "DEF",
+        "totalSeats": 200,
+        "bookedSeats": 18
+    },
+    {
+        "flightId": 5,
+        "clientCode": "GHI",
+        "totalSeats": 200,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 6,
+        "clientCode": "JKL",
+        "totalSeats": 180,
+        "bookedSeats": 12
+    },
+    {
+        "flightId": 6,
+        "clientCode": "MNO",
+        "totalSeats": 180,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 7,
+        "clientCode": "ABC",
+        "totalSeats": 150,
+        "bookedSeats": 10
+    },
+    {
+        "flightId": 7,
+        "clientCode": "XYZ",
+        "totalSeats": 150,
+        "bookedSeats": 12
+    },
+    {
+        "flightId": 8,
+        "clientCode": "DEF",
+        "totalSeats": 200,
+        "bookedSeats": 18
+    },
+    {
+        "flightId": 8,
+        "clientCode": "GHI",
+        "totalSeats": 200,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 9,
+        "clientCode": "JKL",
+        "totalSeats": 180,
+        "bookedSeats": 12
+    },
+    {
+        "flightId": 9,
+        "clientCode": "MNO",
+        "totalSeats": 180,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 10,
+        "clientCode": "ABC",
+        "totalSeats": 150,
+        "bookedSeats": 10
+    },
+    {
+        "flightId": 10,
+        "clientCode": "XYZ",
+        "totalSeats": 150,
+        "bookedSeats": 12
+    },
+
+    {
+        "flightId": 11,
+        "clientCode": "DEF",
+        "totalSeats": 200,
+        "bookedSeats": 18
+    },
+    {
+        "flightId": 11,
+        "clientCode": "GHI",
+        "totalSeats": 200,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 12,
+        "clientCode": "JKL",
+        "totalSeats": 180,
+        "bookedSeats": 12
+    },
+    {
+        "flightId": 12,
+        "clientCode": "MNO",
+        "totalSeats": 180,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 13,
+        "clientCode": "ABC",
+        "totalSeats": 150,
+        "bookedSeats": 10
+    },
+    {
+        "flightId": 13,
+        "clientCode": "XYZ",
+        "totalSeats": 150,
+        "bookedSeats": 12
+    },
+
+    {
+        "flightId": 14,
+        "clientCode": "DEF",
+        "totalSeats": 200,
+        "bookedSeats": 18
+    },
+    {
+        "flightId": 14,
+        "clientCode": "GHI",
+        "totalSeats": 200,
+        "bookedSeats": 15
+    },
+
+    {
+        "flightId": 15,
+        "clientCode": "JKL",
+        "totalSeats": 180,
+        "bookedSeats": 12
+    },
+    {
+        "flightId": 15,
+        "clientCode": "MNO",
+        "totalSeats": 180,
+        "bookedSeats": 15
+    }
+]
