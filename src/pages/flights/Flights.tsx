@@ -22,7 +22,7 @@ const Flights = () => {
 
     return (
         <div className='flights'>
-            <div>
+            <div >
                 <FlightsList onSelect={onSelectionChanged} />
             </div>
             <div className='flightDetails'>

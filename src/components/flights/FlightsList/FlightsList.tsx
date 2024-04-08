@@ -29,24 +29,26 @@ const FlightsList = ({ onSelect }: FlightsListProps) => {
     );
 
     return (
-        <DataGrid
-            dataSource={flights}
-            keyExpr='id'
-            hoverStateEnabled={true}
-            onSelectionChanged={onSelect}>
-            <Selection mode='single' />
-            <Column
-                dataField='airlineCode'
-                caption='Airline'
-                cellRender={airlineRender}
-            />
-            <Column
-                caption='Flight schedule'
-                cellRender={({ data }) =>
-                    ` ${data.flightDate} --- ${data.origin} -----> ${data.destination}`
-                }
-            />
-        </DataGrid>
+        <div style={{ maxHeight: "500px", overflowY: "auto" }}>
+            <DataGrid
+                dataSource={flights}
+                keyExpr='id'
+                hoverStateEnabled={true}
+                onSelectionChanged={onSelect}>
+                <Selection mode='single' />
+                <Column
+                    dataField='airlineCode'
+                    caption='Airline'
+                    cellRender={airlineRender}
+                />
+                <Column
+                    caption='Flight schedule'
+                    cellRender={({ data }) =>
+                        ` ${data.flightDate} --- ${data.origin} -----> ${data.destination}`
+                    }
+                />
+            </DataGrid>
+        </div>
     );
 };
 
