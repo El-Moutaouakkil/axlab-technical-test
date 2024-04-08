@@ -1,6 +1,6 @@
-import { TreeViewTypes } from 'devextreme-react/tree-view';
-import { ButtonTypes } from 'devextreme-react/button';
-import React from 'react';
+import { TreeViewTypes } from "devextreme-react/tree-view";
+import { ButtonTypes } from "devextreme-react/button";
+import React from "react";
 
 export interface HeaderProps {
     menuToggleEnabled: boolean;
@@ -16,7 +16,7 @@ export interface SideNavigationMenuProps {
 }
 
 export interface UserPanelProps {
-    menuMode: 'context' | 'list';
+    menuMode: "context" | "list";
 }
 
 export interface User {
@@ -26,10 +26,13 @@ export interface User {
 
 export type AuthContextType = {
     user?: User;
-    signIn: (email: string, password: string) => Promise<{isOk: boolean, data?: User, message?: string}>;
+    signIn: (
+        email: string,
+        password: string
+    ) => Promise<{ isOk: boolean; data?: User; message?: string }>;
     signOut: () => void;
     loading: boolean;
-}
+};
 
 export interface SideNavToolbarProps {
     title: string;
@@ -49,8 +52,26 @@ interface NavigationData {
 export type NavigationContextType = {
     setNavigationData?: ({ currentPath }: NavigationData) => void;
     navigationData: NavigationData;
-}
+};
 
 export type ValidationType = {
     value: string;
-}
+};
+
+export type IATACode =  "ATL" | "PEK" | "LAX" | "ORD" | "DFW" | "DEN" | "JFK" | "SFO" | "SEA" | "LAS" | "MCO" | "EWR" | "CLT" | "PHX" | "IAH" | "MIA" | "BKK" | "CDG" | "AMS" | "FRA";
+
+export type Flight = {
+    id: number;
+    airlineCode: IATACode;
+    flightNumber: string;
+    flightDate: string;
+    origin: IATACode;
+    destination: IATACode;
+    contingents: Contingent[];
+};
+export type Contingent = {
+    flightId: number;
+    clientCode: string;
+    totalSeats: number;
+    bookedSeats: number;
+};

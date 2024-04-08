@@ -1,0 +1,332 @@
+[
+    {
+        "id": 1,
+        "airlineCode": "ATL",
+        "flightNumber": "DL123",
+        "flightDate": "2024-04-07",
+        "origin": "ATL",
+        "destination": "LAX",
+        "contingents": [
+            {
+                "flightId": 1,
+                "clientCode": "ABC",
+                "totalSeats": 150,
+                "bookedSeats": 100
+            },
+            {
+                "flightId": 1,
+                "clientCode": "XYZ",
+                "totalSeats": 150,
+                "bookedSeats": 120
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "airlineCode": "PEK",
+        "flightNumber": "CA987",
+        "flightDate": "2024-04-08",
+        "origin": "PEK",
+        "destination": "JFK",
+        "contingents": [
+            {
+                "flightId": 2,
+                "clientCode": "DEF",
+                "totalSeats": 200,
+                "bookedSeats": 180
+            },
+            {
+                "flightId": 2,
+                "clientCode": "GHI",
+                "totalSeats": 200,
+                "bookedSeats": 150
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "airlineCode": "LAX",
+        "flightNumber": "UA456",
+        "flightDate": "2024-04-09",
+        "origin": "LAX",
+        "destination": "ORD",
+        "contingents": [
+            {
+                "flightId": 3,
+                "clientCode": "JKL",
+                "totalSeats": 180,
+                "bookedSeats": 120
+            },
+            {
+                "flightId": 3,
+                "clientCode": "MNO",
+                "totalSeats": 180,
+                "bookedSeats": 150
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "airlineCode": "SFO",
+        "flightNumber": "DL123",
+        "flightDate": "2024-04-07",
+        "origin": "SFO",
+        "destination": "LAX",
+        "contingents": [
+            {
+                "flightId": 4,
+                "clientCode": "ABC",
+                "totalSeats": 150,
+                "bookedSeats": 100
+            },
+            {
+                "flightId": 4,
+                "clientCode": "XYZ",
+                "totalSeats": 150,
+                "bookedSeats": 120
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "airlineCode": "MCO",
+        "flightNumber": "CA987",
+        "flightDate": "2024-04-08",
+        "origin": "MCO",
+        "destination": "JFK",
+        "contingents": [
+            {
+                "flightId": 5,
+                "clientCode": "DEF",
+                "totalSeats": 200,
+                "bookedSeats": 180
+            },
+            {
+                "flightId": 5,
+                "clientCode": "GHI",
+                "totalSeats": 200,
+                "bookedSeats": 150
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "airlineCode": "LAX",
+        "flightNumber": "UA456",
+        "flightDate": "2024-04-09",
+        "origin": "LAX",
+        "destination": "ORD",
+        "contingents": [
+            {
+                "flightId": 6,
+                "clientCode": "JKL",
+                "totalSeats": 180,
+                "bookedSeats": 120
+            },
+            {
+                "flightId": 6,
+                "clientCode": "MNO",
+                "totalSeats": 180,
+                "bookedSeats": 150
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "airlineCode": "CLT",
+        "flightNumber": "DL123",
+        "flightDate": "2024-04-07",
+        "origin": "CLT",
+        "destination": "LAX",
+        "contingents": [
+            {
+                "flightId": 7,
+                "clientCode": "ABC",
+                "totalSeats": 150,
+                "bookedSeats": 100
+            },
+            {
+                "flightId": 7,
+                "clientCode": "XYZ",
+                "totalSeats": 150,
+                "bookedSeats": 120
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "airlineCode": "PHX",
+        "flightNumber": "CA987",
+        "flightDate": "2024-04-08",
+        "origin": "PHX",
+        "destination": "JFK",
+        "contingents": [
+            {
+                "flightId": 8,
+                "clientCode": "DEF",
+                "totalSeats": 200,
+                "bookedSeats": 180
+            },
+            {
+                "flightId": 8,
+                "clientCode": "GHI",
+                "totalSeats": 200,
+                "bookedSeats": 150
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "airlineCode": "CDG",
+        "flightNumber": "UA456",
+        "flightDate": "2024-04-09",
+        "origin": "CDG",
+        "destination": "ORD",
+        "contingents": [
+            {
+                "flightId": 9,
+                "clientCode": "JKL",
+                "totalSeats": 180,
+                "bookedSeats": 120
+            },
+            {
+                "flightId": 9,
+                "clientCode": "MNO",
+                "totalSeats": 180,
+                "bookedSeats": 150
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "airlineCode": "ATL",
+        "flightNumber": "DL123",
+        "flightDate": "2024-04-07",
+        "origin": "ATL",
+        "destination": "LAX",
+        "contingents": [
+            {
+                "flightId": 10,
+                "clientCode": "ABC",
+                "totalSeats": 150,
+                "bookedSeats": 100
+            },
+            {
+                "flightId": 10,
+                "clientCode": "XYZ",
+                "totalSeats": 150,
+                "bookedSeats": 120
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "airlineCode": "PEK",
+        "flightNumber": "CA987",
+        "flightDate": "2024-04-08",
+        "origin": "PEK",
+        "destination": "JFK",
+        "contingents": [
+            {
+                "flightId": 11,
+                "clientCode": "DEF",
+                "totalSeats": 200,
+                "bookedSeats": 180
+            },
+            {
+                "flightId": 11,
+                "clientCode": "GHI",
+                "totalSeats": 200,
+                "bookedSeats": 150
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "airlineCode": "LAX",
+        "flightNumber": "UA456",
+        "flightDate": "2024-04-09",
+        "origin": "LAX",
+        "destination": "ORD",
+        "contingents": [
+            {
+                "flightId": 12,
+                "clientCode": "JKL",
+                "totalSeats": 180,
+                "bookedSeats": 120
+            },
+            {
+                "flightId": 12,
+                "clientCode": "MNO",
+                "totalSeats": 180,
+                "bookedSeats": 150
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "airlineCode": "ATL",
+        "flightNumber": "DL123",
+        "flightDate": "2024-04-07",
+        "origin": "ATL",
+        "destination": "LAX",
+        "contingents": [
+            {
+                "flightId": 13,
+                "clientCode": "ABC",
+                "totalSeats": 150,
+                "bookedSeats": 100
+            },
+            {
+                "flightId": 13,
+                "clientCode": "XYZ",
+                "totalSeats": 150,
+                "bookedSeats": 120
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "airlineCode": "PEK",
+        "flightNumber": "CA987",
+        "flightDate": "2024-04-08",
+        "origin": "PEK",
+        "destination": "JFK",
+        "contingents": [
+            {
+                "flightId": 14,
+                "clientCode": "DEF",
+                "totalSeats": 200,
+                "bookedSeats": 180
+            },
+            {
+                "flightId": 14,
+                "clientCode": "GHI",
+                "totalSeats": 200,
+                "bookedSeats": 150
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "airlineCode": "LAX",
+        "flightNumber": "UA456",
+        "flightDate": "2024-04-09",
+        "origin": "LAX",
+        "destination": "ORD",
+        "contingents": [
+            {
+                "flightId": 15,
+                "clientCode": "JKL",
+                "totalSeats": 180,
+                "bookedSeats": 120
+            },
+            {
+                "flightId": 15,
+                "clientCode": "MNO",
+                "totalSeats": 180,
+                "bookedSeats": 150
+            }
+        ]
+    }
+]

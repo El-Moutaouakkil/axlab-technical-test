@@ -1,5 +1,5 @@
 const appInfo = {
-    title: '.&#x2F;'
+    title: 'AxLab'
 };
 export default appInfo;
 
