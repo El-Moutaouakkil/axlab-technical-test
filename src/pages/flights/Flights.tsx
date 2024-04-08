@@ -1,14 +1,18 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import FlightDetails from "../../components/flights/FlightDetails/FlightDetails";
 import FlightsList from "../../components/flights/FlightsList/FlightsList";
 import "./flights.scss";
 import { DataGridTypes } from "devextreme-react/cjs/data-grid";
+import { useSearchParams } from "react-router-dom";
 
 const Flights = () => {
-
-
     const [showFlightDetails, setShowFlightDetails] = useState(false);
-    const [selectedFlightId, setSelectedFlightId] = useState<number | null>( null );
+    const [selectedFlightId, setSelectedFlightId] = useState<number | null>(
+        null
+    );
+
+    const [searchParams] = useSearchParams();
+    const id = searchParams.get("id");
 
     const onSelectionChanged = useCallback(
         ({ selectedRowsData }: DataGridTypes.SelectionChangedEvent) => {
@@ -20,14 +24,16 @@ const Flights = () => {
         []
     );
 
-    // Note: in a real world app, we should probably save state into url params to allow direct linking to a specific flight details 
-    // and to allow the user to refresh the page without losing the selected flight
-
-    
+    useEffect(() => {
+        if (id) {
+            setSelectedFlightId(Number(id));
+            setShowFlightDetails(true);
+        }
+    }, [id]);
 
     return (
         <div className='flights'>
-            <div >
+            <div>
                 <FlightsList onSelect={onSelectionChanged} />
             </div>
             <div className='flightDetails'>
