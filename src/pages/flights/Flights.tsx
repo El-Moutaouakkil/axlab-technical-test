@@ -3,7 +3,7 @@ import FlightDetails from "../../components/flights/FlightDetails/FlightDetails"
 import FlightsList from "../../components/flights/FlightsList/FlightsList";
 import "./flights.scss";
 import { DataGridTypes } from "devextreme-react/cjs/data-grid";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 const Flights = () => {
     const [showFlightDetails, setShowFlightDetails] = useState(false);
@@ -13,6 +13,7 @@ const Flights = () => {
 
     const [searchParams] = useSearchParams();
     const id = searchParams.get("id");
+    const navigate = useNavigate()
 
     const onSelectionChanged = useCallback(
         ({ selectedRowsData }: DataGridTypes.SelectionChangedEvent) => {
@@ -20,8 +21,9 @@ const Flights = () => {
 
             setShowFlightDetails(!!flight);
             setSelectedFlightId(flight && flight.id);
+            navigate(`/flights?id=${flight.id}`);
         },
-        []
+        [navigate]
     );
 
     useEffect(() => {
