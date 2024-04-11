@@ -7,9 +7,7 @@ import "./flights.scss";
 
 const Flights = () => {
     const [showFlightDetails, setShowFlightDetails] = useState(false);
-    const [selectedFlightId, setSelectedFlightId] = useState<number | null>(
-        null
-    );
+    const [selectedFlightId, setSelectedFlightId] = useState<number>();
 
     const [searchParams, setSearchParams] = useSearchParams();
     const id = searchParams.get("id");
@@ -21,7 +19,6 @@ const Flights = () => {
             setShowFlightDetails(!!flight);
             setSelectedFlightId(flight && flight.id);
             setSearchParams({ id: flight && flight.id });
-          
         },
         [setSearchParams]
     );
@@ -39,12 +36,10 @@ const Flights = () => {
                 <FlightsList onSelect={onSelectionChanged} />
             </div>
             <div className='flightDetails'>
-                {showFlightDetails ? (
-                    <FlightDetails flightId={selectedFlightId ?? 0} />
+                {showFlightDetails && selectedFlightId ? (
+                    <FlightDetails flightId={selectedFlightId} />
                 ) : (
-                    (selectedFlightId === 0 || !selectedFlightId) && (
-                        <h5>Select a flight to show its details</h5>
-                    )
+                    <h5>Select a flight to show its details</h5>
                 )}
             </div>
         </div>
