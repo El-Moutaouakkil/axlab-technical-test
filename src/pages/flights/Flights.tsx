@@ -6,7 +6,6 @@ import FlightsList from "../../components/flights/FlightsList/FlightsList";
 import "./flights.scss";
 
 const Flights = () => {
-    const [showFlightDetails, setShowFlightDetails] = useState(false);
     const [selectedFlightId, setSelectedFlightId] = useState<number>();
 
     const [searchParams, setSearchParams] = useSearchParams();
@@ -16,7 +15,6 @@ const Flights = () => {
         ({ selectedRowsData }: DataGridTypes.SelectionChangedEvent) => {
             const flight = selectedRowsData[0];
 
-            setShowFlightDetails(!!flight);
             setSelectedFlightId(flight && flight.id);
             setSearchParams({ id: flight && flight.id });
         },
@@ -26,7 +24,6 @@ const Flights = () => {
     useEffect(() => {
         if (id) {
             setSelectedFlightId(Number(id));
-            setShowFlightDetails(true);
         }
     }, [id]);
 
@@ -36,7 +33,7 @@ const Flights = () => {
                 <FlightsList onSelect={onSelectionChanged} />
             </div>
             <div className='flightDetails'>
-                {showFlightDetails && selectedFlightId ? (
+                { selectedFlightId ? (
                     <FlightDetails flightId={selectedFlightId} />
                 ) : (
                     <h5>Select a flight to show its details</h5>
