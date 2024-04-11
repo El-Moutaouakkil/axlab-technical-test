@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 // import "./flights.scss";
-import { DataGrid } from "devextreme-react";
-import { Column, Selection } from "devextreme-react/cjs/data-grid";
+import { DataGrid, LoadPanel } from "devextreme-react";
+import { Column, Scrolling, Selection } from "devextreme-react/cjs/data-grid";
 import flightsData from "../../../mock-data/flights.json";
 import { Flight } from "../../../types";
 import { EventInfo } from "devextreme/events";
@@ -36,6 +36,8 @@ const FlightsList = ({ onSelect }: FlightsListProps) => {
                 hoverStateEnabled={true}
                 onSelectionChanged={onSelect}>
                 <Selection mode='single' />
+                <Scrolling mode='virtual' />
+                <LoadPanel  activeStateEnabled />
                 <Column
                     dataField='airlineCode'
                     caption='Airline'
