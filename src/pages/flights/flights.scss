@@ -24,8 +24,12 @@
     // align-items: center;
     gap: 2rem;
 
-    > * {
-        flex: 1;
+    .flights-list{
+        flex: 3;
+    }
+
+    .flight-details{
+        flex: 2;
     }
 
     /* custom scrollbar */
@@ -49,20 +53,3 @@
     }
 }
 
-// .from,
-// .through {
-//     font-size: 0.8rem;
-//     font-weight: 500;
-//     color: rgb(13, 141, 180);
-// }
-
-// .airlineCode,
-// .flightNumber {
-//     font-size: 0.8rem;
-//     font-weight: 500;
-//     padding-top: 0.3rem;
-//     display: inline-block;
-//     text-align: center;
-//     border-radius: 2px;
-//     margin-inline: 1rem;
-// }

@@ -29,10 +29,10 @@ const Flights = () => {
 
     return (
         <div className='flights'>
-            <div>
+            <div className='flights-list'>
                 <FlightsList onSelect={onSelectionChanged} />
             </div>
-            <div className='flightDetails'>
+            <div className='flight-details'>
                 {selectedFlightId ? (
                     <FlightDetails flightId={selectedFlightId} />
                 ) : (
