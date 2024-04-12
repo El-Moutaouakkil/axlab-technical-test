@@ -4,6 +4,7 @@
         "airlineCode": "ATL",
         "flightNumber": "DL123",
         "flightDate": "2024-04-07",
+        "arrivalDate": "2024-04-08",
         "origin": "ATL",
         "destination": "LAX"
     },
@@ -11,7 +12,8 @@
         "id": 2,
         "airlineCode": "PEK",
         "flightNumber": "CA987",
-        "flightDate": "2024-04-08",
+        "flightDate": "2024-04-6",
+        "arrivalDate": "2024-4-07",
         "origin": "PEK",
         "destination": "JFK"
     },
@@ -20,6 +22,7 @@
         "airlineCode": "LAX",
         "flightNumber": "UA456",
         "flightDate": "2024-04-09",
+        "arrivalDate": "2024-04-11",
         "origin": "LAX",
         "destination": "ORD"
     },
@@ -27,7 +30,8 @@
         "id": 4,
         "airlineCode": "SFO",
         "flightNumber": "DL123",
-        "flightDate": "2024-04-07",
+        "flightDate": "2024-04-06",
+        "arrivalDate": "2024-04-07",
         "origin": "SFO",
         "destination": "LAX"
     },
@@ -35,7 +39,8 @@
         "id": 5,
         "airlineCode": "MCO",
         "flightNumber": "CA987",
-        "flightDate": "2024-04-08",
+        "flightDate": "2024-04-05",
+        "arrivalDate": "2024-04-07",
         "origin": "MCO",
         "destination": "JFK"
     },
@@ -43,7 +48,8 @@
         "id": 6,
         "airlineCode": "LAX",
         "flightNumber": "UA456",
-        "flightDate": "2024-04-09",
+        "flightDate": "2024-04-02",
+        "arrivalDate": "2024-04-02",
         "origin": "LAX",
         "destination": "ORD"
     },
@@ -51,7 +57,8 @@
         "id": 7,
         "airlineCode": "CLT",
         "flightNumber": "DL123",
-        "flightDate": "2024-04-07",
+        "flightDate": "2024-04-04",
+        "arrivalDate": "2024-04-05",
         "origin": "CLT",
         "destination": "LAX"
     },
@@ -59,7 +66,8 @@
         "id": 8,
         "airlineCode": "PHX",
         "flightNumber": "CA987",
-        "flightDate": "2024-04-08",
+        "flightDate": "2024-04-07",
+        "arrivalDate": "2024-04-07",
         "origin": "PHX",
         "destination": "JFK"
     },
@@ -67,7 +75,8 @@
         "id": 9,
         "airlineCode": "CDG",
         "flightNumber": "UA456",
-        "flightDate": "2024-04-09",
+        "flightDate": "2024-04-06",
+        "arrivalDate": "2024-04-07",
         "origin": "CDG",
         "destination": "ORD"
     },
@@ -76,6 +85,7 @@
         "airlineCode": "ATL",
         "flightNumber": "DL123",
         "flightDate": "2024-04-07",
+        "arrivalDate": "2024-04-07",
         "origin": "ATL",
         "destination": "LAX"
     },
@@ -83,7 +93,8 @@
         "id": 11,
         "airlineCode": "PEK",
         "flightNumber": "CA987",
-        "flightDate": "2024-04-08",
+        "flightDate": "2024-04-06",
+        "arrivalDate": "2024-04-07",
         "origin": "PEK",
         "destination": "JFK"
     },
@@ -91,7 +102,8 @@
         "id": 12,
         "airlineCode": "LAX",
         "flightNumber": "UA456",
-        "flightDate": "2024-04-09",
+        "flightDate": "2024-04-05",
+        "arrivalDate": "2024-04-07",
         "origin": "LAX",
         "destination": "ORD"
     },
@@ -100,6 +112,7 @@
         "airlineCode": "ATL",
         "flightNumber": "DL123",
         "flightDate": "2024-04-07",
+        "arrivalDate": "2024-04-09",
         "origin": "ATL",
         "destination": "LAX"
     },
@@ -107,7 +120,8 @@
         "id": 14,
         "airlineCode": "PEK",
         "flightNumber": "CA987",
-        "flightDate": "2024-04-08",
+        "flightDate": "2024-04-05",
+        "arrivalDate": "2024-04-06",
         "origin": "PEK",
         "destination": "JFK"
     },
@@ -115,7 +129,8 @@
         "id": 15,
         "airlineCode": "LAX",
         "flightNumber": "UA456",
-        "flightDate": "2024-04-09",
+        "flightDate": "2024-04-06",
+        "arrivalDate": "2024-04-07",
         "origin": "LAX",
         "destination": "ORD"
     }

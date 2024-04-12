@@ -33,7 +33,7 @@ const Flights = () => {
                 <FlightsList onSelect={onSelectionChanged} />
             </div>
             <div className='flightDetails'>
-                { selectedFlightId ? (
+                {selectedFlightId ? (
                     <FlightDetails flightId={selectedFlightId} />
                 ) : (
                     <h5>Select a flight to show its details</h5>

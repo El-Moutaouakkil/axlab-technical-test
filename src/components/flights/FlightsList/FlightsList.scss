@@ -1,10 +1,107 @@
-.flightsList {
+.airlineCode {
+    background: rgba(186, 215, 210, 0.534);
+    width: 40px;
+}
 
-	.title{
-		display: inline-block;
-		font-family: sans-serif;
-		background-color: rgba(208, 217, 220, 0.526);
-		padding: .5rem 1.7rem;
-		margin-bottom: 0.7rem;
-	}
+#airline-container {
+    padding: 0.3rem 0.7rem;
+    border-radius: 3px;
+    #flightNumber-container {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-weight: 500;
+        color: #333;
+
+        #title {
+            font-weight: 500;
+            color: #555;
+            font-size: 0.75rem;
+        }
+
+        #number,
+        #title {
+            font-size: 0.8rem;
+        }
+        #airline-icon-container {
+            .dx-icon-airplane {
+                display: inline-block;
+                margin-inline: 0.3rem -0.3rem;
+                font-size: 1.3rem;
+                color: rgb(253, 47, 28);
+                transform: rotate(45deg);
+            }
+        }
+    }
+    #airlineCode-container {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #555;
+        margin-top: 0.2rem;
+
+        #title {
+        }
+
+        #code {
+            background-color: rgb(197, 233, 245);
+            color: rgb(0, 110, 255);
+            padding: 0.2rem 0.4rem;
+            border-radius: 2px;
+        }
+    }
+}
+
+#flight-schedule-container {
+    #flightDate-container {
+        margin-bottom: 0.6rem;
+        font-size: 0.75rem;
+        #title {
+            font-weight: 500;
+            color: #444;
+        }
+        #date {
+            font-weight: 600;
+            color: #333;
+        }
+    }
+
+    #origin-destination {
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+
+        .title {
+            font-size: 0.6rem;
+            font-weight: 600;
+        }
+        .location {
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        #airline-icon-container {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            .dx-icon-airplane {
+                display: inline-block;
+                margin-inline: 0.3rem -0.3rem;
+                font-size: 1.3rem;
+                color: rgb(253, 47, 28);
+                transform: rotate(90deg);
+            }
+
+            &::before,
+            &::after {
+                content: "- - - - - - -";
+                color: red;
+            }
+            &::before {
+                margin-right: -0.5rem;
+            }
+        }
+        #origin-container {
+        }
+        #destination-container {
+        }
+    }
 }
