@@ -92,11 +92,14 @@
 
             &::before,
             &::after {
-                content: "- - - - - - -";
                 color: red;
             }
             &::before {
+				content: "--------- - - - - - - - -";
                 margin-right: -0.5rem;
+            }
+            &::after {
+                content: "- - - - - - - ---------- ";
             }
         }
         #origin-container {
